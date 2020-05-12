@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity" >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/ic_logo"
+        />
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="LOG IN"
+        android:textColor="#FEF7E4"
+        android:textSize="32dp"></TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/log_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="                     Username"
+        android:textColor="#FEF7E4" android:textColorHint="#fef7e4"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/yellow"
+        android:hint="                      Password "
+        android:inputType="textPassword"
+        android:textColor="#FEF7E4"
+        android:textColorHint="#FEF7E4"
+        ></EditText>
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="30dp"
+        android:buttonTint="@color/yellow"
+        android:text="Remember Password  |"
+        android:textColor="#FEF7E4"
+        ></CheckBox>
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/remember"
+        android:backgroundTint="@color/yellow"
+        android:checked="false"
+        android:textColor="#FEF7E4"
+        android:theme="@style/SwitchTheme"
+        ></Switch>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/Switch"
+        android:text="Administrator"
+        android:textColor="#FEF7E4"
+        android:textSize="15dp"></TextView>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_button"
+        android:text="GO"
+        android:textColor="#233849"
+        ></Button>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="#FEF7E4"
+        android:paddingBottom="10dp"
+        android:text="Don't have account? Register"
+        android:textColor="#233849"></Button>
+</RelativeLayout>
